@@ -1716,9 +1716,9 @@ table.dataTable thead .sorting:after {
   color: #ed5565;
 }
 .input-group-addon {
-  background-color: #fff;
+  background-color: #f2f2f3;
   border: 1px solid #E5E6E7;
-  border-radius: 1px;
+  border-radius: 6px;
   color: inherit;
   font-size: 14px;
   font-weight: 400;

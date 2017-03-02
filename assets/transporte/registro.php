@@ -1,6 +1,6 @@
 <div class="row  border-bottom white-bg dashboard-header">
-    <h2>Nuevo de vehículo</h2>
-    <small>Registro de vehículos (patrullas, motos, autobús, bicicletas)</small>
+    <h2>Registro de vehículo</h2>
+    <small>Patrullas, motos, autobús, bicicletas.</small>
     <br><br>
     <ol class="breadcrumb">
         <li><a href="?cargar=principal">Inicio</a></li>
@@ -23,10 +23,6 @@
                     </div>
                 </div>
                 <div class="ibox-content">
-                    <h2>
-                        Registro de vehículo policial.
-                    </h2>
-
                     <form id="form" enctype="multipart/form-data" action="#" method="get" class="wizard-big">
                         <h1>Tipo</h1>
                         <fieldset>

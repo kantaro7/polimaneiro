@@ -197,6 +197,12 @@
     border-right: none;
 }
 
+.wizard > .content > .body .input-group-addon.izq
+{
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
 .wizard > .content > .body .select
 {
     background-color: #fff;

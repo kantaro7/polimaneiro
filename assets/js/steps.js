@@ -64,14 +64,20 @@ $(document).ready(function() {
             form.submit();
         }
     }).validate({
-                errorPlacement: function (error, element)
-                {
-                    element.before(error);
-                },
-                rules: {
-                    confirm: {
-                        equalTo: "#password"
-                    }
-                }
-            });
+        highlight: function(element) {
+            jQuery(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            jQuery(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'label label-danger',
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertBefore(element.parent());
+            } else {
+                error.insertBefore(element);
+            }
+        }
+    });
 });
