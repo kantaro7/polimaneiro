@@ -96,7 +96,7 @@
                                         <label>Kilometraje *</label>
                                         <div class="input-group m-b">
                                             <input type="text" name="kilometrosPatrulla" placeholder="5.000" class="form-control kilometros" value="0">
-                                            <span class="input-group-addon">km</span>
+                                            <span class="input-group-addon izq">km</span>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                                         <label>Kilometraje *</label>
                                         <div class="input-group m-b">
                                             <input type="text" name="kilometrosMoto" placeholder="5.000" class="form-control kilometros" value="0" required>
-                                            <span class="input-group-addon">km</span>
+                                            <span class="input-group-addon izq">km</span>
                                         </div>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@
                                         <label>Kilometraje *</label>
                                         <div class="input-group m-b">
                                             <input type="text" name="kilometrosAutobus" placeholder="5.000" class="form-control kilometros" value="0">
-                                            <span class="input-group-addon">km</span>
+                                            <span class="input-group-addon izq">km</span>
                                         </div>
                                     </div>
                                 </div>
