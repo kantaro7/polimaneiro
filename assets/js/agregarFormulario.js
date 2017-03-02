@@ -1,3 +1,4 @@
+//gustavo estuvo aqui
 $(document).ready(function() {
 
     var cantidad = 0;
