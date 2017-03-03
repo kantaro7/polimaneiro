@@ -21,7 +21,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM ADMINISTRATIVOS";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -34,7 +34,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO ADMINISTRATIVOS (cedula, cargo, departamento, area) VALUES ('{$this->cedula}', '{$this->cargo}', '{$this->departamento}', '{$this->area}')";
 
                 $this->con->consultaSimple($sql);
                 return true;

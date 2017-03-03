@@ -21,7 +21,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM HONORARIOS";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -34,7 +34,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO HONORARIOS (cedula, fecha, asistido, observacion) VALUES ('{$this->cedula}', '{$this->fecha}', '{$this->asistido}', '{$this->observacion}')";
 
                 $this->con->consultaSimple($sql);
                 return true;

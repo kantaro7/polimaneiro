@@ -26,7 +26,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM CONYUGE";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -39,7 +39,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO CONYUGE (codigo, cedula, nombre, apellido, direccion, edad, sexo, fecha_nac, lugar_nac) VALUES ('{$this->codigo}', '{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->direccion}', '{$this->edad}', '{$this->sexo}', '{$this->fecha_nac}', '{$this->lugar_nac}')";
 
                 $this->con->consultaSimple($sql);
                 return true;

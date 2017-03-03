@@ -22,7 +22,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM CONTRATADOS";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -35,7 +35,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO CONTRATADOS (cedula, nivel, area, inicio_contrato, fin_contrato) VALUES ('{$this->cedula}', '{$this->nivel}', '{$this->area}', '{$this->inicio_contrato}', '{$this->fin_contrato}')";
 
                 $this->con->consultaSimple($sql);
                 return true;

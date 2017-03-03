@@ -2,7 +2,7 @@
     include_once('conexion.php');
 
     class armas{
-        private $serial;
+        private $seria;
         private $nombre;
         private $modelo;
         private $calibre;
@@ -24,7 +24,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM ARMAS";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -37,7 +37,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO ARMAS (seria, nombre, modelo, calibre, capacidad, tipo, color) VALUES ('{$this->serial}', '{$this->nombre}', '{$this->modelo}', '{$this->calibre}', '{$this->capacidad}', '{$this->tipo}', '{$this->color}')";
 
                 $this->con->consultaSimple($sql);
                 return true;

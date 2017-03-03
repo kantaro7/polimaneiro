@@ -28,7 +28,7 @@
         }
 
         public function lista(){
-            $sql = "SELECT * FROM PERSONAL";
+            $sql = "SELECT * FROM R_ASIGNACIONES";
             $resultado = $this->con->consultaRetorno($sql);
             return $resultado;
         }
@@ -41,7 +41,7 @@
             if($num != 0){
   				return false;
   			}else{
-                $sql = "INSERT INTO PERSONAL (cedula, nombre, apellido, sexo, telefono, tipo) VALUES ('{$this->cedula}', '{$this->nombre}', '{$this->apellido}', '{$this->sexo}' '{$this->telefono}', '{$this->tipo}')";
+                $sql = "INSERT INTO R_ASIGNACIONES (cedula, placa, fecha_asig, fecha_dev, tanque_inic, tanque_fin, kilom_inic, kilom_fin, est_entrega, est_devol, est_asignacion) VALUES ('{$this->cedula}', '{$this->placa}', '{$this->fecha_asig}', '{$this->fecha_dev}', '{$this->tanque_inic}', '{$this->tanque_fin}', '{$this->kilom_inic}', '{$this->kilom_fin}', '{$this->est_entrega}', '{$this->est_devol}', '{$this->est_asignacion}')";
 
                 $this->con->consultaSimple($sql);
                 return true;
