@@ -34,7 +34,7 @@
 
 </head>
 
-<body>
+<body class="fixed-sidebar">
 	<?php include_once("../modulos/recursos.php"); ?>
 
 	<div id="wrapper">
@@ -69,6 +69,10 @@
 					<li id="inicio" <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "principal") { echo "class=\"active\"";}?>>
 	            		<a href="?cargar=principal"><i class="fa fa-th-large"></i> <span class="nav-label">Inicio</span></a>
 	            	</li>
+
+					<li id="persoanl" <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "registroPersonal") { echo "class=\"active\"";} ?>>
+						<a href="?cargar=registroPersonal"><i class="fa fa-clipboard"></i> <span class="nav-label">Registro de personal</span></a>
+					</li>
 
 					<li id="expediente" <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "nuevo") { echo "class=\"active\"";} ?>>
 						<a href="#"><i class="fa fa-clipboard"></i> <span class="nav-label">Expedientes</span> <span class="fa arrow"></span></a>

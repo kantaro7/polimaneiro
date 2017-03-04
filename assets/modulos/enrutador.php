@@ -13,6 +13,10 @@
 					include_once('../rrhh/' . $vista . '.php');
 				break;
 
+				case "registroPersonal":
+					include_once('../rrhh/' . $vista . '.php');
+				break;
+
 				case "nuevo":
 					include_once('../rrhh/' . $vista . '.php');
 				break;

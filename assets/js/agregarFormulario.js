@@ -156,4 +156,52 @@ $(document).ready(function() {
         $("#formBicicleta").show();
     });
 
+    if ($("#directivo").is(':checked')) {
+        $("#formdDirectivo").show();
+        $("#formAdministrativo").hide();
+        $("#formPolicia").hide();
+        $("#formObrero").hide();
+        $("#formContratado").hide();
+    };
+
+    $("#directivo").on('ifClicked', function (ev) {
+        $("#formdDirectivo").show();
+        $("#formAdministrativo").hide();
+        $("#formPolicia").hide();
+        $("#formObrero").hide();
+        $("#formContratado").hide();
+    });
+
+    $("#administrativo").on('ifClicked', function (ev) {
+        $("#formdDirectivo").hide();
+        $("#formAdministrativo").show();
+        $("#formPolicia").hide();
+        $("#formObrero").hide();
+        $("#formContratado").hide();
+    });
+
+    $("#policia").on('ifClicked', function (ev) {
+        $("#formdDirectivo").hide();
+        $("#formAdministrativo").hide();
+        $("#formPolicia").show();
+        $("#formObrero").hide();
+        $("#formContratado").hide();
+    });
+
+    $("#obrero").on('ifClicked', function (ev) {
+        $("#formdDirectivo").hide();
+        $("#formAdministrativo").hide();
+        $("#formPolicia").hide();
+        $("#formObrero").show();
+        $("#formContratado").hide();
+    });
+
+    $("#contratado").on('ifClicked', function (ev) {
+        $("#formdDirectivo").hide();
+        $("#formAdministrativo").hide();
+        $("#formPolicia").hide();
+        $("#formObrero").hide();
+        $("#formContratado").show();
+    });
+
 });

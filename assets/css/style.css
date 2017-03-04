@@ -5057,3 +5057,20 @@ body.skin-3 {
     display: none;
   }
 }
+
+#formPersonal {
+    background-color: #EEE;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#formPersonal .input-group-addon, .form-control {
+    border: 1px solid #CCC;
+    border-right: none;
+}
+
+#formPersonal .form-control {
+    border: 1px solid #CCC;
+}
