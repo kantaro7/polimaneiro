@@ -17,7 +17,7 @@
 					include_once('../rrhh/' . $vista . '.php');
 				break;
 
-				case "nuevo":
+				case "nuevoExpediente":
 					include_once('../rrhh/' . $vista . '.php');
 				break;
 

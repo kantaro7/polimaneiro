@@ -74,11 +74,10 @@
 						<a href="?cargar=registroPersonal"><i class="fa fa-clipboard"></i> <span class="nav-label">Registro de personal</span></a>
 					</li>
 
-					<li id="expediente" <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "nuevo") { echo "class=\"active\"";} ?>>
+					<li id="expediente" <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "nuevoExpediente") { echo "class=\"active\"";} ?>>
 						<a href="#"><i class="fa fa-clipboard"></i> <span class="nav-label">Expedientes</span> <span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
-							<li><a href="?cargar=nuevo_exp"><i class="fa fa-user-plus"></i> Nuevo</a></li>
-							<li><a href="?cargar=nuevo"><i class="fa fa-user-plus"></i> Nuevo 2</a></li>
+							<li><a href="?cargar=nuevoExpediente"><i class="fa fa-user-plus"></i> Nuevo</a></li>
 						</ul>
 					</li>
 
