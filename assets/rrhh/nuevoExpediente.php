@@ -57,7 +57,7 @@
 
                                         <div class="input-group m-b">
                                             <span id="signo_funcionario" class="input-group-addon signo">V-</span>
-                                            <input id="cedula_funcionario" type="text" name="cedula" placeholder="Cédula" class="form-control cedula">
+                                            <input id="cedula_funcionario" type="text" name="cedula" placeholder="Cédula" class="form-control cedula" required>
                                         </div>
                                     </div>
                                 </div>
