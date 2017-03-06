@@ -21,6 +21,10 @@
 					include_once('../rrhh/' . $vista . '.php');
 				break;
 
+				case "nuevaEvidencia":
+					include_once('../evidencias/' . $vista . '.php');
+				break;
+
 				case "registro":
 					include_once('../transporte/' . $vista . '.php');
 				break;

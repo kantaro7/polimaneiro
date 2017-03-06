@@ -1,10 +1,10 @@
 <div class="row  border-bottom white-bg dashboard-header">
-    <h2>Registro de personal</h2>
-    <small>Directivo, administrativo, policial, obrero y contratado.</small>
+    <h2>Registro de evidencias</h2>
+    <small></small>
     <br><br>
     <ol class="breadcrumb">
         <li><a href="?cargar=principal">Inicio</a></li>
-        <li class="active"><strong>Nevo Personal</strong></li>
+        <li class="active"><strong>Registrar evidencia</strong></li>
     </ol>
 </div>
 
@@ -13,7 +13,7 @@
         <div class="col-lg-12">
             <div class="ibox">
                 <div class="ibox-title">
-                    <h5>Formulario de registro de personal</h5>
+                    <h5>Formulario de registro de evidencias</h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -26,11 +26,32 @@
                         <div class="formCuerpo">
                             <h2>Datos generales</h2>
                             <div class="row">
+
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label for="cedula">Cédula *</label>
                                         <div class="input-group m-b">
-                                            <span class="input-group-addon">V-</span>
+                                            <span class="input-group-addon sig">V-</span>
+                                            <input type="text" name="cedula" placeholder="Cédula" class="form-control cedula ced" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="cedula">Cédula *</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon sig">V-</span>
+                                            <input type="text" name="cedula" placeholder="Cédula" class="form-control cedula ced" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="cedula">Cédula *</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon sig">V-</span>
                                             <input type="text" name="cedula" placeholder="Cédula" class="form-control cedula ced" required>
                                         </div>
                                     </div>
@@ -336,18 +357,6 @@
 
 <script charset="UTF-8">
     $(document).ready(function(){
-        $('.postal').blur(function(){
-            var codigo = $(this).val();
-
-            codigo = parseInt(codigo);
-
-            if (codigo == 6301 || codigo == 6309 || codigo == 6316 || codigo == 6318 || codigo == 6320 || codigo == 6321 || codigo == 6304) {
-                $('.postal').attr("style", "background-color: green");
-            }else {
-                $('.postal').attr("style", "background-color: red");
-            }
-        });
-
         $('.calendario .input-group.date').datepicker({
             startView: 2,
             format: 'dd/mm/yyyy',
@@ -358,13 +367,5 @@
             endDate: '0d'
         });
 
-        $('.input-daterange').datepicker({
-            startView: 2,
-            format: 'dd/mm/yyyy',
-            todayBtn: "linked",
-            keyboardNavigation: false,
-            forceParse: false,
-            autoclose: true
-        });
     });
 </script>

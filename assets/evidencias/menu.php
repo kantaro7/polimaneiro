@@ -63,13 +63,17 @@
                 		</div>
 
                 		<div align="center">
-                    		<img src="../img/logo_poliman.jpg" class="logo-mini"/>
+                    		<img src="../img/logoPolicia.png" class="logo-mini"/>
                 		</div>
             		</li>
 
-					<li class="active">
+					<li>
 	            		<a href="?cargar=principal"><i class="fa fa-th-large"></i> <span class="nav-label">Inicio</span></a>
 	            	</li>
+
+					<li>
+						<a href="?cargar=nuevaEvidencia"><i class="fa fa-archive"></i> <span class="nav-label">Registrar evidencia</span></a>
+					</li>
 
 					<li>
 						<a href="#"><i class="fa fa-clipboard"></i> <span class="nav-label">Prueba</span> <span class="fa arrow"></span></a>

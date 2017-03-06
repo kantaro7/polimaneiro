@@ -5067,19 +5067,22 @@ body.skin-3 {
     overflow-x: hidden;
 }
 
-#formPersonal .input-group-addon, .form-control {
+.formSimple .input-group-addon, .form-control {
     border: 1px solid #CCC;
     border-right: none;
 }
 
-#formPersonal .form-control {
+.formSimple .form-control {
     border: 1px solid #CCC;
 }
 
-#formPersonal #btn-guardar {
+.formSimple #btn-guardar {
     margin-left: 10px;
+    margin-right: 15px;
+    float: right;
 }
 
-#formPersonal #btn-limpiar {
+.formSimple #btn-limpiar {
     margin-left: 55px;
+    float: right;
 }

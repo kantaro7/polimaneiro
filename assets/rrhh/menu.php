@@ -62,7 +62,7 @@
                 		</div>
 
                 		<div align="center">
-                    		<img src="../img/logo_poliman.jpg" class="logo-mini"/>
+                    		<img src="../img/logoPolicia.png" class="logo-mini"/>
                 		</div>
             		</li>
 

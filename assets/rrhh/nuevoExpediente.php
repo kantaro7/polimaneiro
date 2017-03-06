@@ -56,8 +56,8 @@
                                         <label for="cedula">Cédula *</label>
 
                                         <div class="input-group m-b">
-                                            <span id="signo_funcionario" class="input-group-addon signo">V-</span>
-                                            <input id="cedula_funcionario" type="text" name="cedula" placeholder="Cédula" class="form-control cedula" required>
+                                            <span class="input-group-addon">V-</span>
+                                            <input type="text" name="cedula" placeholder="Cédula" class="form-control cedula ced">
                                         </div>
                                     </div>
                                 </div>
@@ -326,8 +326,8 @@
                                             <label for="cedula">Cédula *</label>
 
                                             <div class="input-group m-b">
-                                                <span id="signo_conyugue" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_conyugue" type="text" name="cedula_conyugue" placeholder="Cédula" class="form-control cedula ">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_conyugue" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -458,8 +458,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_hijo1" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_hijo1" type="text" name="cedula_hijo1" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_hijo1" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -544,8 +544,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_hijo2" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_hijo2" type="text" name="cedula_hijo2" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_hijo2" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -630,8 +630,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_hijo3" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_hijo3" type="text" name="cedula_hijo3" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_hijo3" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -716,8 +716,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_hijo4" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_hijo4" type="text" name="cedula_hijo4" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_hijo4" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -802,8 +802,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_hijo5" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_hijo5" type="text" name="cedula_hijo5" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_hijo5" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -894,8 +894,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_padre" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_padre" type="text" name="cedula_padre" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_padre" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -976,8 +976,8 @@
                                         <div class="form-group">
                                             <label>Cédula</label>
                                             <div class="input-group m-b">
-                                                <span id="signo_madre" class="input-group-addon signo">V-</span>
-                                                <input id="cedula_madre" type="text" name="cedula_madre" placeholder="Cédula" class="form-control cedula">
+                                                <span class="input-group-addon">V-</span>
+                                                <input type="text" name="cedula_madre" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
