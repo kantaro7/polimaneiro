@@ -68,7 +68,7 @@
                 		</div>
             		</li>
 
-					<li <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "principal") { echo "class=\"active\"";} ?>>
+					<li <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "principal") { echo "class=\"active\"";} elseif (!isset($_GET['cargar'])) { echo "class=\"active\""; } ?>>
 	            		<a href="?cargar=principal"><i class="fa fa-th-large"></i> <span class="nav-label">Inicio</span></a>
 	            	</li>
 

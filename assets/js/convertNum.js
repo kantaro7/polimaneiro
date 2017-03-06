@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('.ced').blur(function() {
+    $('.ced').on("blur", function() {
         var numero = 0;
 
         numero = parseInt($(this).val());

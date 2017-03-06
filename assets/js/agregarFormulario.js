@@ -1,5 +1,44 @@
-//gustavo estuvo aqui
 $(document).ready(function() {
+
+    var cont = 1;
+
+    $('#agregarFuncionario').on("click", function(event){
+        cont++;
+
+        $('#cantFunc').val(cont);
+
+        var datos = '<div id="datos'+cont+'" class="row"><div class="col-lg-4"><div class="form-group"><label for="cedula'+cont+'">Cédula *</label><div class="input-group m-b"><span class="input-group-addon sig">V-</span><input type="text" name="cedula'+cont+'" placeholder="Funcionario que obtuvo evidencia" class="form-control cedula ced" required></div></div></div><div class="col-lg-4"><div class="form-group"><label>Nombres</label><input type="text" name="nombre'+cont+'" class="form-control soloLetra" disabled="true"></div></div><div class="col-lg-4"><div class="form-group"><label for="apellido">Apellidos</label><input type="text" name="apellido'+cont+'" class="form-control soloLetra" disabled="true"></div></div></div>';
+
+        var cont2 = cont - 1;
+
+        $('#datos'+cont2+'').after(datos);
+        event.preventDefault();
+
+        $('.cedula').autoNumeric('init',{
+            aSep: '.',
+            aDec: ',',
+            vMin: '0',
+            vMax: '99999999'
+        });
+
+        $('.ced').on("blur", function() {
+            var numero = 0;
+
+            numero = parseInt($(this).val());
+
+            if (numero >= 80) {
+                $(this).prev('span').html("E-");
+            } else {
+                $(this).prev('span').html("V-");
+            }
+        });
+    });
+
+    $('#eliminarFuncionario').on("click", function(){
+        $('#datos'+cont+'').remove();
+        cont--;
+        $('#cantFunc').val(cont);
+    });
 
     var cantidad = 0;
     $("#agregar2").click(function(){

@@ -67,15 +67,15 @@
                 		</div>
             		</li>
 
-					<li>
+					<li <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "principal") { echo "class=\"active\"";} elseif (!isset($_GET['cargar'])) { echo "class=\"active\""; } ?>>
 	            		<a href="?cargar=principal"><i class="fa fa-th-large"></i> <span class="nav-label">Inicio</span></a>
 	            	</li>
 
-					<li>
+					<li <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "nuevaEvidencia") { echo "class=\"active\"";} ?>>
 						<a href="?cargar=nuevaEvidencia"><i class="fa fa-archive"></i> <span class="nav-label">Registrar evidencia</span></a>
 					</li>
 
-					<li>
+					<li <?php if (isset($_GET['cargar']) && $_GET['cargar'] == "prueba") { echo "class=\"active\"";} ?>>
 						<a href="#"><i class="fa fa-clipboard"></i> <span class="nav-label">Prueba</span> <span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
 							<li><a href="?cargar=prueba"><i class="fa fa-user-plus"></i> Prueba</a></li>
