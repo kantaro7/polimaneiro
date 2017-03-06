@@ -74,6 +74,16 @@ $(document).ready(function() {
             }
         });
 
+        $('.calendario .input-group.date').datepicker({
+            startView: 2,
+            format: 'dd/mm/yyyy',
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            endDate: '0d'
+        });
+
         $('.i-checks').iCheck({
             checkboxClass: 'icheckbox_square-green',
             radioClass: 'iradio_square-green',

@@ -87,3 +87,6 @@
 <script src="../js/actions.js"></script>
 
 <link href="../css/prueba.css">
+
+<!-- wikedpicker -->
+<script src="../js/plugins/wickedpicker/src/wickedpicker.js"></script>

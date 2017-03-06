@@ -5087,7 +5087,7 @@ body.skin-3 {
     float: right;
 }
 
-.hijo {
+.hijo, .func{
     float: right;
     margin-left: 15px;
 }
