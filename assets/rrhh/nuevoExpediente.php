@@ -303,21 +303,21 @@
                         <h1>Datos Familiares</h1>
                         <fieldset>
 
-                            <div class="conyugue">
-                                <h2>Datos del cónyugue</h2>
+                            <div class="conyuge">
+                                <h2>Datos del cónyuge</h2>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label>Nombres *</label>
-                                            <input type="text" name="nombre_conyugue" placeholder="Nombres del conyugue" class="form-control ">
+                                            <input type="text" name="nombre_conyuge" placeholder="Nombres del conyuge" class="form-control ">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="apellido">Apellidos *</label>
-                                            <input type="text" name="apellido_conyugue" placeholder="Apellidos del conyugue" class="form-control ">
+                                            <input type="text" name="apellido_conyuge" placeholder="Apellidos del conyuge" class="form-control ">
                                         </div>
                                     </div>
 
@@ -327,7 +327,7 @@
 
                                             <div class="input-group m-b">
                                                 <span class="input-group-addon">V-</span>
-                                                <input type="text" name="cedula_conyugue" placeholder="Cédula" class="form-control cedula ced">
+                                                <input type="text" name="cedula_conyuge" placeholder="Cédula" class="form-control cedula ced">
                                             </div>
                                         </div>
                                     </div>
@@ -338,7 +338,7 @@
                                     <div class="col-lg-8">
                                         <div class="form-group">
                                             <label>Lugar de nacimiento *</label>
-                                            <input type="text" name="nacimiento_conyugue" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
+                                            <input type="text" name="nacimiento_conyuge" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
                                         </div>
                                     </div>
 
@@ -347,7 +347,7 @@
                                             <label>Fecha de nacimiento *</label>
                                             <div class="input-group date">
                                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                <input type="text" name="f_nacimiento_conyugue" class="form-control " placeholder="20/01/2017">
+                                                <input type="text" name="f_nacimiento_conyuge" class="form-control " placeholder="20/01/2017">
                                             </div>
                                         </div>
                                     </div>
@@ -358,7 +358,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label>Dirección de residencia *</label>
-                                            <input type="text" name="residencia_conyugue" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
+                                            <input type="text" name="residencia_conyuge" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +370,7 @@
                                             <label>Teléfono móvil *</label>
                                             <div class="input-group m-b">
                                                 <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                                <input type="text" name="telefono1_conyugue" placeholder="(04XX)-555-5555" class="form-control telefono ">
+                                                <input type="text" name="telefono1_conyuge" placeholder="(04XX)-555-5555" class="form-control telefono ">
                                             </div>
                                         </div>
                                     </div>
@@ -380,7 +380,7 @@
                                             <label>Teléfono de residencia *</label>
                                             <div class="input-group m-b">
                                                 <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
-                                                <input type="text" name="telefono2_conyugue" placeholder="(04XX)-555-5555" class="form-control telefono ">
+                                                <input type="text" name="telefono2_conyuge" placeholder="(04XX)-555-5555" class="form-control telefono ">
                                             </div>
                                         </div>
                                     </div>
@@ -388,7 +388,7 @@
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="correo">Correo electrónico *</label>
-                                            <input type="email" name="correo_conyugue" placeholder="nombre@proveedor.com" class="form-control ">
+                                            <input type="email" name="correo_conyuge" placeholder="nombre@proveedor.com" class="form-control ">
                                         </div>
                                     </div>
                                 </div>
@@ -399,35 +399,35 @@
                                             <label>Grupo Sanguíneo *</label>
                                             <br>
                                             <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_conyugue" checked> <i></i> O+ </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_conyuge" checked> <i></i> O+ </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_conyugue"> <i></i> A+ </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_conyuge"> <i></i> A+ </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_conyugue"> <i></i> B+ </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_conyuge"> <i></i> B+ </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_conyugue"> <i></i> AB+ </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_conyuge"> <i></i> AB+ </label></div>
                                             </div>
 
                                             <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_conyugue"> <i></i> O- </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_conyuge"> <i></i> O- </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_conyugue"> <i></i> A- </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_conyuge"> <i></i> A- </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_conyugue"> <i></i> B- </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_conyuge"> <i></i> B- </label></div>
 
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_conyugue"> <i></i> AB- </label></div>
+                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_conyuge"> <i></i> AB- </label></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label for="educacion_conyugue">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_conyugue"> <i></i> Primaria </label></div>
+                                            <label for="educacion_conyuge">Nivel Educativo</label>
+                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_conyuge"> <i></i> Primaria </label></div>
 
-                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_conyugue"> <i></i> Secundaria </label></div>
+                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_conyuge"> <i></i> Secundaria </label></div>
 
-                                            <div class="radio i-checks"><label> <input type="radio" value="Universitaria" name="educacion_conyugue"> <i></i> Universitario </label></div>
+                                            <div class="radio i-checks"><label> <input type="radio" value="Universitaria" name="educacion_conyuge"> <i></i> Universitario </label></div>
 
                                         </div>
                                     </div>
@@ -436,9 +436,9 @@
                             <br>
 
                             <h2>Datos de los hijos e hijas</h2>
-                            <input type="hidden" name="cant_hijos" id="cant_hijos">
+                            <input type="hidden" name="cantHijos" id="cantHijos" value="1">
                             <br>
-                            <div class="hijos">
+                            <div id="hijo1">
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
@@ -513,7 +513,7 @@
                                     <div class="col-lg-4">
                                         <div class="form-group">
                                             <label for="educacion_hijo1">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo1"> <i></i> Primaria </label></div>
+                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo1" checked> <i></i> Primaria </label></div>
 
                                             <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo1"> <i></i> Secundaria </label></div>
 
@@ -524,365 +524,9 @@
                                 </div>
                             </div>
 
-                            <div id="hijo2" style="display: none;">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" name="nombre_hijo2" placeholder="Nombres del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Apellidos</label>
-                                            <input type="text" name="apellido_hijo2" placeholder="Apellidos del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Cédula</label>
-                                            <div class="input-group m-b">
-                                                <span class="input-group-addon">V-</span>
-                                                <input type="text" name="cedula_hijo2" placeholder="Cédula" class="form-control cedula ced">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group calendario">
-                                            <label>Fecha de nacimiento</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="fecha_hijo2" class="form-control " value="10/11/2013">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <label>Dirección de residencia *</label>
-                                            <input type="text" name="residencia_hijo2" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Grupo Sanguíneo *</label>
-                                            <br>
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_hijo2" checked> <i></i> O+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_hijo2"> <i></i> A+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_hijo2"> <i></i> B+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_hijo2"> <i></i> AB+ </label></div>
-                                            </div>
-
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_hijo2"> <i></i> O- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_hijo2"> <i></i> A- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_hijo2"> <i></i> B- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_hijo2"> <i></i> AB- </label></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="educacion_hijo2">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo2"> <i></i> Primaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo2"> <i></i> Secundaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Universitario" name="educacion_hijo2"> <i></i> Universitario </label></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="hijo3" style="display: none;">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" name="nombre_hijo3" placeholder="Nombres del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Apellidos</label>
-                                            <input type="text" name="apellido_hijo3" placeholder="Apellidos del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Cédula</label>
-                                            <div class="input-group m-b">
-                                                <span class="input-group-addon">V-</span>
-                                                <input type="text" name="cedula_hijo3" placeholder="Cédula" class="form-control cedula ced">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group calendario">
-                                            <label>Fecha de nacimiento</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="fecha_hijo3" class="form-control" value="10/11/2013">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <label>Dirección de residencia *</label>
-                                            <input type="text" name="residencia_hijo3" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Grupo Sanguíneo *</label>
-                                            <br>
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_hijo3" checked> <i></i> O+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_hijo3"> <i></i> A+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_hijo3"> <i></i> B+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_hijo3"> <i></i> AB+ </label></div>
-                                            </div>
-
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_hijo3"> <i></i> O- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_hijo3"> <i></i> A- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_hijo3"> <i></i> B- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_hijo3"> <i></i> AB- </label></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="educacion_hijo3">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo3"> <i></i> Primaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo3"> <i></i> Secundaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Universitario" name="educacion_hijo3"> <i></i> Universitario </label></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="hijo4" style="display: none;">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" name="nombre_hijo4" placeholder="Nombres del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Apellidos</label>
-                                            <input type="text" name="apellido_hijo4" placeholder="Apellidos del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Cédula</label>
-                                            <div class="input-group m-b">
-                                                <span class="input-group-addon">V-</span>
-                                                <input type="text" name="cedula_hijo4" placeholder="Cédula" class="form-control cedula ced">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group calendario">
-                                            <label>Fecha de nacimiento</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="fecha_hijo4" class="form-control" value="10/11/2013">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <label>Dirección de residencia *</label>
-                                            <input type="text" name="residencia_hijo4" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Grupo Sanguíneo *</label>
-                                            <br>
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_hijo4" checked> <i></i> O+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_hijo4"> <i></i> A+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_hijo4"> <i></i> B+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_hijo4"> <i></i> AB+ </label></div>
-                                            </div>
-
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_hijo4"> <i></i> O- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_hijo4"> <i></i> A- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_hijo4"> <i></i> B- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_hijo4"> <i></i> AB- </label></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="educacion_hijo4">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo4"> <i></i> Primaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo4"> <i></i> Secundaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Universitario" name="educacion_hijo4"> <i></i> Universitario </label></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="hijo5" style="display: none;">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" name="nombre_hijo5" placeholder="Nombres del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Apellidos</label>
-                                            <input type="text" name="apellido_hijo5" placeholder="Apellidos del hijo(a)" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Cédula</label>
-                                            <div class="input-group m-b">
-                                                <span class="input-group-addon">V-</span>
-                                                <input type="text" name="cedula_hijo5" placeholder="Cédula" class="form-control cedula ced">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group calendario">
-                                            <label>Fecha de nacimiento</label>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="fecha_hijo5" class="form-control" value="10/11/2013">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <label>Dirección de residencia *</label>
-                                            <input type="text" name="residencia_hijo5" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control ">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label>Grupo Sanguíneo *</label>
-                                            <br>
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_hijo5" checked> <i></i> O+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_hijo5"> <i></i> A+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_hijo5"> <i></i> B+ </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_hijo5"> <i></i> AB+ </label></div>
-                                            </div>
-
-                                            <div class="col-lg-5">
-                                                <div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_hijo5"> <i></i> O- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_hijo5"> <i></i> A- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_hijo5"> <i></i> B- </label></div>
-
-                                                <div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_hijo5"> <i></i> AB- </label></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="educacion_hijo5">Nivel Educativo</label>
-                                            <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo5"> <i></i> Primaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo5"> <i></i> Secundaria </label></div>
-
-                                            <div class="radio i-checks"><label> <input type="radio" value="Universitario" name="educacion_hijo5"> <i></i> Universitario </label></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <div class="row">
-                                <div class="col-sm-1">
-                                    <input type="button" value="&#xf067;" class="fa-input btn btn-primary btn-sm" id="agregar2">
-                                    <input style="display: none;" type="button" value="&#xf067;" class="fa-input btn btn-primary btn-sm"  id="agregar3">
-                                    <input style="display: none;" type="button" value="&#xf067;" class="fa-input btn btn-primary btn-sm"  id="agregar4">
-                                    <input style="display: none;" type="button" value="&#xf067;" class="fa-input btn btn-primary btn-sm"  id="agregar5">
-                                </div>
-
-                                <div class="col-sm-1">
-                                    <input style="display: none;" type="button" value="&#xf068;" class="fa-input btn btn-danger btn-sm"  id="borrar2">
-                                    <input style="display: none;" type="button" value="&#xf068;" class="fa-input btn btn-danger btn-sm"  id="borrar3">
-                                    <input style="display: none;" type="button" value="&#xf068;" class="fa-input btn btn-danger btn-sm"  id="borrar4">
-                                    <input style="display: none;" type="button" value="&#xf068;" class="fa-input btn btn-danger btn-sm"  id="borrar5">
-                                </div>
+                                <button id="agregarHijo" type="button" class="btn btn-primary btn-sm hijo"><i class="fa fa-plus"></i></button>
+                                <button id="eliminarHijo" class="btn btn-danger btn-sm hijo" type="button"><i class="fa fa-minus"></i></button>
                             </div>
 
                             <br>
@@ -1038,7 +682,7 @@
 
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <label for="educacion_conyugue">Nivel Educativo</label>
+                                            <label for="educacion_madre">Nivel Educativo</label>
                                             <div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_madre" checked> <i></i> Primaria </label></div>
 
                                             <div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_madre"> <i></i> Secundaria </label></div>

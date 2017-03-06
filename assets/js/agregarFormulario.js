@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var cont = 1;
+    var contH = 1;
 
     $('#agregarFuncionario').on("click", function(event){
         cont++;
@@ -40,101 +41,70 @@ $(document).ready(function() {
         $('#cantFunc').val(cont);
     });
 
-    var cantidad = 0;
-    $("#agregar2").click(function(){
-        $("#hijo2").show();
-        $("#agregar2").hide();
-        $("#agregar3").show();
-        $("#borrar2").show();
-        cantidad ++;
-        $("#cant_hijos").val(cantidad);
+    $('#agregarHijo').on("click", function(event){
+        contH++;
+
+        $('#cantHijos').val(contH);
+
+        var datos = '<div id="hijo'+contH+'"><div class="row"><div class="col-lg-4"><div class="form-group"><label>Nombres</label><input type="text" name="nombre_hijo'+contH+'" placeholder="Nombres del hijo(a)" class="form-control"></div></div><div class="col-lg-4"><div class="form-group"><label>Apellidos</label><input type="text" name="apellido_hijo'+contH+'" placeholder="Apellidos del hijo(a)" class="form-control"></div></div><div class="col-lg-4"><div class="form-group"><label>Cédula</label><div class="input-group m-b"><span class="input-group-addon">V-</span><input type="text" name="cedula_hijo'+contH+'" placeholder="Cédula" class="form-control cedula ced"></div></div></div></div><div class="row"><div class="col-lg-4"><div class="form-group calendario"><label>Fecha de nacimiento</label><div class="input-group date"><span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="fecha_hijo'+contH+'" class="form-control"value="10/11/2013"></div></div></div><div class="col-lg-8"><div class="form-group"><label>Dirección de residencia *</label><input type="text" name="residencia_hijo'+contH+'" placeholder="La Asunción, Edo. Nueva Esparta" class="form-control "></div></div></div><div class="row"><div class="col-lg-4"><div class="form-group"><label>Grupo Sanguíneo *</label><br><div class="col-lg-5"><div class="radio i-checks"><label> <input type="radio" value="O+" name="sangre_hijo'+contH+'" checked> <i></i> O+ </label></div><div class="radio i-checks"><label> <input type="radio" value="A+" name="sangre_hijo'+contH+'"> <i></i> A+ </label></div><div class="radio i-checks"><label> <input type="radio" value="B+" name="sangre_hijo'+contH+'"> <i></i> B+ </label></div><div class="radio i-checks"><label> <input type="radio" value="AB+" name="sangre_hijo'+contH+'"> <i></i> AB+ </label></div></div><div class="col-lg-5"><div class="radio i-checks"><label> <input type="radio" value="O-" name="sangre_hijo'+contH+'"> <i></i> O- </label></div><div class="radio i-checks"><label> <input type="radio" value="A-" name="sangre_hijo'+contH+'"> <i></i> A- </label></div><div class="radio i-checks"><label> <input type="radio" value="B-" name="sangre_hijo'+contH+'"> <i></i> B- </label></div><div class="radio i-checks"><label> <input type="radio" value="AB-" name="sangre_hijo'+contH+'"> <i></i> AB- </label></div></div></div></div><div class="col-lg-4"><div class="form-group"><label for="educacion_hijo1">Nivel Educativo</label><div class="radio i-checks"><label> <input type="radio" value="Primaria" name="educacion_hijo'+contH+'" checked> <i></i>';
+
+        var datos2 = 'Primaria </label></div><div class="radio i-checks"><label> <input type="radio" value="Secundaria" name="educacion_hijo'+contH+'"> <i></i> Secundaria </label></div><div class="radio i-checks"><label> <input type="radio" value="Universitario" name="educacion_hijo'+contH+'"> <i></i> Universitario </label></div></div></div></div></div>';
+
+        var contH2 = contH - 1;
+
+        $('#hijo'+contH2+'').after(datos+datos2);
+        event.preventDefault();
+
+        $('.cedula').autoNumeric('init',{
+            aSep: '.',
+            aDec: ',',
+            vMin: '0',
+            vMax: '99999999'
+        });
+
+        $('.ced').on("blur", function() {
+            var numero = 0;
+
+            numero = parseInt($(this).val());
+
+            if (numero >= 80) {
+                $(this).prev('span').html("E-");
+            } else {
+                $(this).prev('span').html("V-");
+            }
+        });
+
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
     });
 
-    $("#borrar2").click(function(){
-        $("#hijo2").hide();
-        $("#agregar2").show();
-        $("#agregar3").hide();
-        $("#borrar2").hide();
-        cantidad --;
-        $("#cant_hijos").val(cantidad);
+    $('#eliminarHijo').on("click", function(){
+        $('#hijo'+contH+'').remove();
+        cont--;
+        $('#cantHijos').val(contH);
     });
 
-    $("#agregar3").click(function(){
-        $("#hijo3").show();
-        $("#agregar3").hide();
-        $("#agregar4").show();
-        $("#borrar2").hide();
-        $("#borrar3").show();
-        cantidad ++;
-        $("#cant_hijos").val(cantidad);
-    });
-
-    $("#borrar3").click(function(){
-        $("#hijo3").hide();
-        $("#agregar3").show();
-        $("#agregar4").hide();
-        $("#borrar2").show();
-        $("#borrar3").hide();
-        cantidad --;
-        $("#cant_hijos").val(cantidad);
-    });
-
-    $("#agregar4").click(function(){
-        $("#hijo4").show();
-        $("#agregar4").hide();
-        $("#agregar5").show();
-        $("#borrar3").hide();
-        $("#borrar4").show();
-        cantidad ++;
-        $("#cant_hijos").val(cantidad);
-    });
-
-    $("#borrar4").click(function(){
-        $("#hijo4").hide();
-        $("#agregar4").show();
-        $("#agregar5").hide();
-        $("#borrar3").show();
-        $("#borrar4").hide();
-        cantidad --;
-        $("#cant_hijos").val(cantidad);
-    });
-
-    $("#agregar5").click(function(){
-        $("#hijo5").show();
-        $("#agregar5").hide();
-        $("#borrar4").hide();
-        $("#borrar5").show();
-        cantidad ++;
-        $("#cant_hijos").val(cantidad);
-    });
-
-    $("#borrar5").click(function(){
-        $("#hijo5").hide();
-        $("#agregar5").show();
-        $("#borrar4").show();
-        $("#borrar5").hide();
-        cantidad --;
-        $("#cant_hijos").val(cantidad);
-    });
 
     if ($("#soltero").is(':checked')) {
-        $(".conyugue").hide();
+        $(".conyuge").hide();
     };
 
     $("#soltero").on('ifClicked', function (ev) {
-        $(".conyugue").hide();
+        $(".conyuge").hide();
     });
 
     $("#casado").on('ifClicked', function (ev) {
-        $(".conyugue").show();
+        $(".conyuge").show();
     });
 
     $("#viudo").on('ifClicked', function (ev) {
-        $(".conyugue").show();
+        $(".conyuge").show();
     });
 
     $("#divorciado").on('ifClicked', function (ev) {
-        $(".conyugue").show();
+        $(".conyuge").show();
     });
 
     $("#si").on('ifClicked', function (ev) {
