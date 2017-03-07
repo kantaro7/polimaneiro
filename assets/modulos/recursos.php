@@ -88,5 +88,6 @@
 
 <link href="../css/prueba.css">
 
-<!-- wikedpicker -->
-<script src="../js/plugins/wickedpicker/src/wickedpicker.js"></script>
+<!-- Time Picker -->
+<link rel="stylesheet" href="../css/plugins/bootstrap-formhelpers.css">
+<script src="../js/plugins/bootstrap-formhelpers.js"></script>

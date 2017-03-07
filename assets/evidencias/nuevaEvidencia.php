@@ -22,19 +22,18 @@
                 </div>
 
                 <div class="ibox-content">
-                    <form class="formSimple" enctype="multipart/form-data" action="#" method="get">
-                        <div class="formCuerpo">
-
+                    <form id="form" enctype="multipart/form-data" action="#" method="get" class="wizard-big">
+                        <input id="cantFunc" type="text" name="cantidadFuncionarios" value="1" hidden="true">
+                        <h1>Funcionario(s)</h1>
+                        <fieldset>
                             <h2>Datos generales</h2>
-                            <input id="cantFunc" type="text" name="cantidadFuncionarios" value="1" hidden="true">
                             <div id="datos1" class="row">
-
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label for="cedula">Cédula *</label>
                                         <div class="input-group m-b">
                                             <span class="input-group-addon sig">V-</span>
-                                            <input type="text" name="cedula" placeholder="Funcionario que obtuvo evidencia" class="form-control cedula ced" required>
+                                            <input type="text" name="cedula" placeholder="Funcionario que obtuvo evidencia" class="form-control cedula ced">
                                         </div>
                                     </div>
                                 </div>
@@ -56,9 +55,12 @@
 
                             <button id="agregarFuncionario" type="button" class="btn btn-primary btn-sm func"><i class="fa fa-plus"></i></button>
                             <button id="eliminarFuncionario" class="btn btn-danger btn-sm func" type="button"><i class="fa fa-minus"></i></button>
+                        </fieldset>
 
+                        <h1>Fecha, hora y dirección</h1>
+                        <fieldset>
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group calendario">
                                         <label>Fecha de obtención *</label>
                                         <div class="input-group date">
@@ -68,19 +70,91 @@
                                     </div>
                                 </div>
 
+                                <div class="col-lg-2">
+                                    <label for="horaObtenida">Hora *</label>
+                                    <div class="bfh-timepicker" data-mode="12h">
+                                        <div class="form-group">
+                                            <input type="text" name="horaObtenida" class="form-control" placeholder="" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        <label>Ubicación donde fue obtenida *</label>
+                                        <textarea rows="4" col="50" name="direccion" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <h1>Tipo de evidencia</h1>
+                        <fieldset>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Tipo de evidencia</label>
+                                    <br>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Estupefaciente </label></div>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Armamento </label></div>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Dinero </label></div>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Objetos personales </label></div>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Alimentos </label></div>
+                                    <div class="checkbox i-checks"><label><input type="checkbox" value=""><i></i> Otro </label></div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <h1>Datos de la evidencia</h1>
+                        <fieldset>
+                            <div id="droga" class="row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="hora">Hora *</label>
-                                        <input type="text" name="horaObtenida" class="form-control inputHora">
+                                        <label for="tipoDroga">Tipo de droga</label>
+                                        <select class="form-control" name="tipoDroga">
+                                            <option value="Marihuana">Marihuana</option>
+                                            <option value="Cocaína">Cocaína</option>
+                                            <option value="LCD">LCD</option>
+                                            <option value="Crack">Crack</option>
+                                            <option value="Heroína">Heroína</option>
+                                            <option value="Anfetaminas">Anfetaminas</option>
+                                            <option value="Metanfetaminas">Metanfetaminas</option>
+                                            <option value="Hongos">Hongos</option>
+                                            <option value="Esteroides">Esteroides</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="pesoDroga">Peso *</label>
+                                        <input type="text" name="pesoDroga" class="form-control">
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="row">
-                            <input id="btn-guardar" type="submit" name="guardar" value="Finalizar" class="btn btn-primary">
-                            <input id="btn-limpiar" type="reset" name="limpiar" value="Limpiar" class="btn btn-danger">
-                        </div>
+                            <div id="arma" class="row">
+
+                            </div>
+
+                            <div id="dinero" class="row">
+
+                            </div>
+
+                            <div id="drogas" class="row">
+
+                            </div>
+
+                            <div id="drogas" class="row">
+
+                            </div>
+
+                            <div id="drogas" class="row">
+
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -108,24 +182,5 @@
             autoclose: true,
             endDate: '0d'
         });
-
-        var options = {
-            now: "12:35", //hh:mm 24 hour format only, defaults to current time
-            twentyFour: false, //Display 24 hour format, defaults to false
-            upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS
-            downArrow: 'wickedpicker__controls__control-down', //The down arrow class selector to use, for custom CSS
-            close: 'wickedpicker__close', //The close class selector to use, for custom CSS
-            hoverState: 'hover-state', //The hover state class to use, for custom CSS
-            title: 'Timepicker', //The Wickedpicker's title,
-            showSeconds: false, //Whether or not to show seconds,
-            secondsInterval: 1, //Change interval for seconds, defaults to 1  ,
-            minutesInterval: 1, //Change interval for minutes, defaults to 1
-            beforeShow: null, //A function to be called before the Wickedpicker is shown
-            show: null, //A function to be called when the Wickedpicker is shown
-            clearable: false, //Make the picker's input clearable (has clickable "x")
-        };
-
-        $('.inputHora').wikedpicker(options);
-
     });
 </script>

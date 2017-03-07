@@ -3,6 +3,8 @@ $(document).ready(function() {
         bodyTag: "fieldset",
         // stepsOrientation: "vertical",
         transitionEffect: "slideLeft",
+        enableFinishButton: true,
+        showFinishButtonAlways: true,   
         onStepChanging: function (event, currentIndex, newIndex) {
             // Always allow going backward even if the current step contains invalid fields!
             if (currentIndex > newIndex) {

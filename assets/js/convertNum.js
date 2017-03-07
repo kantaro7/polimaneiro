@@ -3,9 +3,11 @@ $(document).ready(function(){
     $('.ced').on("blur", function() {
         var numero = 0;
 
-        numero = parseInt($(this).val());
+        numero = parseInt($(this).autoNumeric('get'));
 
-        if (numero >= 80) {
+        alert(numero);
+
+        if (numero >= 80000000) {
             $(this).prev('span').html("E-");
         } else {
             $(this).prev('span').html("V-");
