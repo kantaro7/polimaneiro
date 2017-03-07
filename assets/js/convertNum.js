@@ -5,12 +5,37 @@ $(document).ready(function(){
 
         numero = parseInt($(this).autoNumeric('get'));
 
-        alert(numero);
-
         if (numero >= 80000000) {
             $(this).prev('span').html("E-");
         } else {
             $(this).prev('span').html("V-");
+        }
+    });
+
+    $('.peso').on("blur", function(){
+        var cantidad = parseFloat($(this).autoNumeric('get'));
+
+        if (cantidad >= 1000) {
+            cantidad = cantidad / 1000;
+            cantidad.toString();
+            $(this).val(cantidad);
+            $(this).autoNumeric('update',{
+                aSep: '.',
+                aDec: ',',
+                vMin: '0',
+                vMax: '999999999',
+                aSign: ' kg',
+                pSign: 's'
+            });
+        } else {
+            $(this).autoNumeric('update',{
+                aSep: '.',
+                aDec: ',',
+                vMin: '0',
+                vMax: '999999999',
+                aSign: ' gr',
+                pSign: 's'
+            });
         }
     });
 
@@ -41,6 +66,15 @@ $(document).ready(function(){
         aDec: ',',
         vMin: '0',
         vMax: '999999999'
+    });
+
+    $('.peso').autoNumeric('init',{
+        aSep: '.',
+        aDec: ',',
+        vMin: '0',
+        vMax: '999999999',
+        aSign: ' gr',
+        pSign: 's'
     });
 
 

@@ -32,6 +32,10 @@
    <!-- iCheck -->
    <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
 
+   <!-- Dropzone -->
+   <link href="../css/plugins/dropzone/basic.css" rel="stylesheet">
+   <link href="../css/plugins/dropzone/dropzone.css" rel="stylesheet">
+
    <link href="../css/prueba.css" rel="stylesheet">
 </head>
 

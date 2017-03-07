@@ -91,3 +91,8 @@
 <!-- Time Picker -->
 <link rel="stylesheet" href="../css/plugins/bootstrap-formhelpers.css">
 <script src="../js/plugins/bootstrap-formhelpers.js"></script>
+
+<!-- Dropzone -->
+<script src="../js/plugins/dropzone/dropzone.js"></script>
+
+<script src="../js/plugins/pruebaDrop.js"></script>

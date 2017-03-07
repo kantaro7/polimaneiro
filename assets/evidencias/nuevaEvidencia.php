@@ -110,7 +110,7 @@
                         <h1>Datos de la evidencia</h1>
                         <fieldset>
                             <div id="droga" class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                         <label for="tipoDroga">Tipo de droga</label>
                                         <select class="form-control" name="tipoDroga">
@@ -127,10 +127,47 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4">
+                                <div class="col-lg-2">
                                     <div class="form-group">
                                         <label for="pesoDroga">Peso *</label>
-                                        <input type="text" name="pesoDroga" class="form-control">
+                                        <div class="input-group">
+                                            <input type="text" name="pesoDroga" class="form-control peso">
+                                            <span class="input-group-addon izq">gr</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label>Dimensiones del embalaje</label>
+                                        <div class="input-group">
+                                            <input type="text" name="" class="form-control">
+                                            <span class="input-group-addon izq">cm</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label>Dimensiones del embalaje</label>
+                                        <div class="input-group">
+                                            <input type="text" name="" class="form-control">
+                                            <span class="input-group-addon izq">cm</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="codigoDroga">Código del embalaje</label>
+                                        <input type="text" name="codigoDroga" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        <label>Descripción *</label>
+                                        <textarea rows="4" col="50" name="descripcionDroga" class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -152,6 +189,45 @@
                             </div>
 
                             <div id="drogas" class="row">
+
+                            </div>
+                        </fieldset>
+
+                        <h1>Registro fotográfico</h1>
+                        <fieldset>
+                            <!-- HTML heavily inspired by http://blueimp.github.io/jQuery-File-Upload/ -->
+                            <div class="table table-striped" class="files" id="previews">
+
+                              <div id="template" class="file-row">
+                                <!-- This is used as the file preview template -->
+                                <div>
+                                    <span class="preview"><img data-dz-thumbnail /></span>
+                                </div>
+                                <div>
+                                    <p class="name" data-dz-name></p>
+                                    <strong class="error text-danger" data-dz-errormessage></strong>
+                                </div>
+                                <div>
+                                    <p class="size" data-dz-size></p>
+                                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                      <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                    </div>
+                                </div>
+                                <div>
+                                  <button class="btn btn-primary start">
+                                      <i class="glyphicon glyphicon-upload"></i>
+                                      <span>Start</span>
+                                  </button>
+                                  <button data-dz-remove class="btn btn-warning cancel">
+                                      <i class="glyphicon glyphicon-ban-circle"></i>
+                                      <span>Cancel</span>
+                                  </button>
+                                  <button data-dz-remove class="btn btn-danger delete">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                              </div>
 
                             </div>
                         </fieldset>
