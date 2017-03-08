@@ -32,6 +32,9 @@
    <!-- iCheck -->
    <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
 
+	<!-- fileinput -->
+   <link href="../css/plugins/fileinput/fileinput.css" rel="stylesheet">
+
    <link href="../css/prueba.css" rel="stylesheet">
 </head>
 

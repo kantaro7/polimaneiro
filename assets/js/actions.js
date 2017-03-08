@@ -43,4 +43,8 @@ $(document).ready(function(){
         });
         return true;
     });
+
+    $("#subir").fileinput({
+        language: 'es'
+    });
 });

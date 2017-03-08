@@ -91,3 +91,8 @@
 <!-- Time Picker -->
 <link rel="stylesheet" href="../css/plugins/bootstrap-formhelpers.css">
 <script src="../js/plugins/bootstrap-formhelpers.js"></script>
+
+<!-- fileinput -->
+<script src="../js/plugins/fileinput/fileinput.js"></script>
+<script src="../js/plugins/fileinput/theme.js"></script>
+<script src="../js/plugins/fileinput/es.js"></script>
