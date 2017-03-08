@@ -3,7 +3,7 @@
 
     class administrativos{
         private $cedula;
-        private $cargo;
+        private $carga;
         private $departamento;
         private $area;
         private $con;
